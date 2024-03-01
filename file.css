@@ -1,0 +1,495 @@
+html{
+    overflow: smooth;
+}
+@media (min-width:1300px){
+    body{
+        background-color: black;
+    }
+    header::before{
+        background: url('bg.jpg') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px; 
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    .top{
+        border: 2px solid black;
+        background: black;
+        border-radius: 30px;
+        position: fixed;
+        width: 97%;
+        padding: 10px;
+        margin: 0px auto;
+        height: 115px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+    }
+    .left{
+        border: 2px solid white;
+        width: 90px;
+        height: 90px;
+        border-radius: 60px; 
+        margin-left: 30px;
+        margin-top:15px;
+    }
+    #logo{
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: auto;
+        margin-top: 15px;
+        filter: invert(1);
+    }
+    .left div{
+        text-align: center;
+        color: white;
+    }
+    .mid{
+        /* border: 2px solid black; */
+        width: 30%;
+        height: 55px;
+        margin-top: 30px;
+        /* padding-top: 10px; */
+        border-radius: 30px;
+    }
+    .nav{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav li a{
+        text-decoration: none;
+        color: white;
+    }
+    #firstnav{
+        margin-left: 25px;
+    }
+    #lastnav{
+        margin-right: 25px;
+    }
+    .nav li a:hover{
+        text-decoration: underline;
+    }
+    .nav li a:active{
+        color: greenyellow;
+    }
+    .right a{
+        padding: 3px;
+        /* border: 1px solid black; */
+        /* background-color: gray; */
+        display: block;
+        margin: 20px 30px;
+        text-decoration: none;
+        color:white;
+        border-radius: 10px;
+    }
+    .right a:hover{
+        text-decoration: underline;
+    }
+    .right a:active{
+        color: chartreuse;
+    }
+    #log{
+        width: 40px;
+    }
+    .tophead{
+        /* border: 2px solid black; */
+        color: white;
+        display: block;
+        width: 99%;
+        position: absolute;
+        top: 130px;   
+}
+    .tophead h1{
+        /* border: 2px solid red; */
+        font-size: 50px;
+        text-align: center;
+    }
+    .price{
+        /* border: 2px solid red; */
+        position: absolute;
+        top:340px;
+        font-size: 20px;
+        display: block;
+        width: 99%;
+        color: white;
+        text-align: center;
+    }
+    .fill{
+        /* border: 2px solid red; */
+        position: absolute;
+        width: 99%;
+        top: 360px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .fill form input{
+        background-color: transparent;
+        display: block;
+        width: 30%;
+        margin: 20px auto;
+        border-radius: 10px;
+        padding: 5px;
+        color: white;
+    }
+    ::placeholder{
+        color: white;
+        opacity: 0.7;
+    }
+    #select{
+        background-color: transparent;
+        display: block;
+        width: 31%;
+        margin: 20px auto;
+        padding: 5px;
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        opacity: 10;
+    }
+    #select option{
+        color: red;
+    }
+    .submit{
+        display: flex;
+        width: 32%;
+        margin: auto;
+        
+    }
+    .content{
+        position: absolute;
+        top: 800px;
+        width: 95%;
+    }
+    .box1{
+        position: relative;
+        width: 51%;
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+        margin-left: 100px;
+        padding: 50px;
+        animation-name: firstbox;
+        animation-duration: 1.5s;
+        animation-timing-function:linear;  
+    }
+    @keyframes firstbox{
+        0%{right: 1200px;}
+        25%{right: 900px;}
+        50%{right: 600px;}
+        75%{right: 300px;}
+        100%{right: 0px;}
+    }
+    #box1head{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #parabox1{
+        position: relative;
+        bottom: 25px;
+        display: inline-block;
+        width: 400px;
+    }
+    .box1 img{
+        position:relative;
+        bottom: 14px;
+        border-radius: 35px;
+        margin-left: 25px;
+        width: 300px;
+        height: 220px;
+    }
+    .box2{
+        position: relative;
+        width: 51%;
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+        margin-left: 550px;
+        margin-top: 20px;
+        padding: 50px;
+        animation-name: secondbox;
+        animation-duration: 1.5s;
+        animation-timing-function:ease-in-out;
+    }
+    @keyframes secondbox
+    {
+        0%{left: 1200px;}
+        25%{left: 900px;}
+        50%{left: 60px;}
+        75%{left: 300px;}
+        100%{left: 0px;}
+    }
+    #box2head{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #parabox2{
+        position: relative;
+        bottom: 25px;
+        display: inline-block;
+        width: 400px;
+    }
+    .box2 img{
+        position:relative;
+        bottom: 14px;
+        border-radius: 35px;
+        margin-right: 25px;
+        width: 300px;
+        height: 220px;
+    }
+    .box3{
+        position: relative;
+        width: 51%;
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+        margin-left: 100px;
+        margin-top: 20px;
+        padding: 50px;
+        margin-bottom: 5px;
+        animation-name: thirdbox;
+        animation-duration: 1.5s;
+        animation-timing-function:linear;        
+    }
+    @keyframes thirdbox{
+        0%{right: 1200px;}
+        25%{right: 900px;}
+        50%{right: 600px;}
+        75%{right: 300px;}
+        100%{right: 0px;}
+    }
+    #box3head{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #parabox3{
+        position: relative;
+        bottom: 25px;
+        display: inline-block;
+        width: 540px;
+    }
+    .box3 img{
+        position:relative;
+        bottom: 14px;
+        border-radius: 35px;
+        margin-left: 25px;
+        width: 150px;
+        height: 220px;
+    }
+
+}
+@media (min-width:315px) and (max-width:550px){
+    body{
+        background-color: black;
+        color:white;
+    }
+    header::before{
+        background: url('bg.jpg') no-repeat center 
+            center/cover;
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px; 
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    .left{
+        width: 60px;
+        height: 60px;
+        border: 1px solid black;
+        border-radius: 40px;
+    }
+    .left img{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        width:20px;
+        height:20px;
+    }
+    .left div{
+        font-size: 10px;
+        margin:auto;
+        text-align: center;
+    }
+    .mid{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+    .mid ul{
+        /* display: flex; */
+        list-style: none;
+    }
+    .mid ul a:hover{color: gray;}
+    .mid ul a:active
+        {text-decoration:underline;}
+    #firstnav{
+        position: relative;
+        right: 75px;
+    }
+    #nav2{
+        position:relative;
+        bottom:20px;
+    }
+    #nav3{
+        position:relative;
+        right: 75px;
+    }
+    #lastnav{
+        position:relative;
+        bottom:20px;
+    }
+    .mid ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    #insta{
+        display: none;
+    }
+    #log{
+        position: absolute;
+        left:20px;
+        top: 80px;
+    }
+    #log:hover{color: gray;}
+    #log:active{text-decoration:underline}
+    .right a{
+        text-decoration: none;
+        color: white;
+    }
+    .tophead{
+        position: relative;
+        top: 20px;
+    }
+    .tophead h1{position: relative;
+        top: 60px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .price{
+        position: relative;
+        text-align: center;
+        top: 120px;
+
+    }
+    .fill{
+        position: relative;
+        top: 150px;
+    }
+    .fill input{
+        background-color: transparent;
+        display: block;
+        width: 60%;
+        color: white;
+        margin: 10px auto;
+        border-radius: 7px;
+    }
+    ::placeholder{
+        color: white;
+        opacity: 0.7;
+    }
+    #select{
+        display: block;
+        width: 60%;
+        color: white;
+        background-color: transparent;
+        margin: 10px auto;
+        opacity: 0.7;
+        border-radius: 7px;
+    }
+    #select option{
+        color: tomato;
+    }
+    .submit{
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+    #signup{
+        width: 100px;
+        opacity: 0.7;
+    }
+    #trial{
+        width: 120px;
+        opacity: 0.7;
+    }
+    .content{
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 815px;
+    }
+    .content img{
+        display:block;
+        width: 190px;
+        height: 150px;
+        margin: auto;
+        border-radius: 20px;
+    }
+    .box1{
+        border: 2px solid  purple;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 7px;
+    }
+    .box1 h2{
+        text-align: center;
+    }
+    #parabox1{
+        text-align: center;
+    }
+    .box2{
+        border: 2px solid  purple;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 7px;
+    }
+    .box2 h2{
+        text-align: center;
+    }
+    #parabox2{
+        text-align: center;
+    }
+    .box3{
+        border: 2px solid  purple;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 7px;
+    }
+    .box3 h2{
+        text-align: center;
+    }
+    #parabox3{
+        text-align: center;
+    }
+    .box3 img{
+        height: 220px;
+    }
+}
+@media (min-width:551px) and (max-width:1300px){
+    body{
+        background-color: black;
+        color:white;
+    }
+    header::before{
+        background: url('bg.jpg') no-repeat center 
+            center/cover;
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px; 
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+    }  
+}
